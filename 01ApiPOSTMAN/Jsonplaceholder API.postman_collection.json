@@ -11,6 +11,48 @@
 			"item": [
 				{
 					"name": "https://jsonplaceholder.typicode.com/posts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Testuoju request laika\r",
+									"\r",
+									"// pm objektas/kintamasis postman, irankiu objektas\r",
+									"//metodas test() - atliekamas musu aprasytas testas\r",
+									"\r",
+									"\r",
+									"pm.test(\"Ar request laikas maziau 300ms\", function(){\r",
+									"    // pm.response.\r",
+									"    //iki 500ms\r",
+									"    //programavime naudojamas ms formatas\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"// pm.test(\"Response laikas tarp 100ms ir 1000ms\", function(){\r",
+									"//    pm.expect(pm.response.responseTime).to.be.within(100,1000);\r",
+									"// });\r",
+									"\r",
+									"//200 arba 201\r",
+									"pm.test(\"Status code is 2xx\", function () {\r",
+									"    // pm.response.to.have.status(200);\r",
+									"    pm.expect(pm.response.code).to.be.within(200,203)\r",
+									"});\r",
+									"\r",
+									"//patikrinti ar response body yra JSON formatu\r",
+									"\r",
+									"pm.test('Body JSON formato?',function(){\r",
+									"    //1.tikrinam content-type headeri\r",
+									"    //2. visa body, su elementariosiomis funkcijomis patikrinti\r",
+									"    pm.expect(pm.response.headers.get('Content-type')).to.include('application/json')\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -706,7 +748,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \r\n    \"name\": \"Simona\",\r\n    \"username\": \"KaipSakant\",\r\n    \"email\": \"sita@april.biz\",\r\n    \"address\": {\r\n        \"street\": \"Paaugliukai\",\r\n        \"suite\": \"Apt. 556\",\r\n        \"city\": \"Klaipeda\",\r\n        \"zipcode\": \"92998-3874\",\r\n        \"geo\": {\r\n            \"lat\": \"-37.3159\",\r\n            \"lng\": \"81.1496\"\r\n        }\r\n    },\r\n    \"phone\": \"1-770-736-8031 x56442\",\r\n    \"website\": \"hildegard.org\",\r\n    \"company\": {\r\n        \"name\": \"Romaguera-Crona\",\r\n        \"catchPhrase\": \"Multi-layered client-server neural-net\",\r\n        \"bs\": \"harness real-time e-markets\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"name\": \"Simona\",\r\n    \"username\": \"KaipSakant\",\r\n    \"email\": \"sita@april.biz\",\r\n    \"address\": {\r\n        \"street\": \"Paaugliukai\",\r\n        \"suite\": \"Apt. 556\",\r\n        \"city\": \"Klaipeda\",\r\n        \"zipcode\": \"92998-3874\",\r\n        \"geo\": {\r\n            \"lat\": \"-37.3159\",\r\n            \"lng\": \"81.1496\"\r\n        }\r\n    },\r\n    \"phone\": \"1-770-736-8031 x56442\",\r\n    \"website\": \"hildegard.org\",\r\n    \"company\": {\r\n        \"name\": \"Romaguera-Crona\",\r\n        \"catchPhrase\": \"Multi-layered client-server neural-net\",\r\n        \"bs\": \"harness real-time e-markets\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -818,7 +860,19 @@
 					"name": "allTodos",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/todos",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"todos"
+							]
+						}
 					},
 					"response": []
 				},
@@ -826,7 +880,20 @@
 					"name": "todo/1",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/todos/1",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"todos",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
