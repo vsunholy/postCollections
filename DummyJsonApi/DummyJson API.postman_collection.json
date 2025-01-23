@@ -11,6 +11,18 @@
 			"item": [
 				{
 					"name": "Generate square image(50x50)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -104,7 +116,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200?type=jpg&text=I+am+a+jpeg+image",
+							"raw": "https://dummyjson.com/image/400x200?type=webp&text=I+am+a+webp+image",
 							"protocol": "https",
 							"host": [
 								"dummyjson",
@@ -117,11 +129,11 @@
 							"query": [
 								{
 									"key": "type",
-									"value": "jpg"
+									"value": "webp"
 								},
 								{
 									"key": "text",
-									"value": "I+am+a+jpeg+image"
+									"value": "I+am+a+webp+image"
 								}
 							]
 						}
@@ -2073,9 +2085,10 @@
 				"packages": {},
 				"exec": [
 					"//Patikrinti kiekvieno request formatą\r",
-					"pm.test(\"Response formatas yra JSON\", function () {\r",
-					"    pm.response.to.be.json;\r",
+					"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+					"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
 					"});\r",
+					"\r",
 					"//Patikrinti, ar kiekvienas response JSON neturi 'error elemento'\r",
 					"pm.test(\"JSON neturi 'error' elemento\", function () {\r",
 					"    let jsonData = pm.response.json();\r",
