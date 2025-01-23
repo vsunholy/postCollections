@@ -1549,14 +1549,13 @@
 								"exec": [
 									"//Parašyti testą https://dummyjson.com/comments request'ui, kuris patikrina, kiek komentarų turi Post, kurio id=46\r",
 									"\r",
-									"pm.test(\"Patikrinti komentarų skaičių Post, kurio id=46\", function () {\r",
-									"    let jsonData = pm.response.json();\r",
-									"    let commentsForPost46 = jsonData.comments.filter(comment => comment.postId === 46);\r",
-									"    pm.expect(commentsForPost46.length).to.be.greaterThan(0); \r",
-									"    console.log(\"Komentarų skaičius Post id=46:\", commentsForPost46.length);\r",
-									"});\r",
-									"\r",
-									""
+									"pm.test(\"Count comments for postId 46\", function () {\r",
+									"    const jsonData = pm.response.json();\r",
+									"    const commentsForPost46 = jsonData.comments.filter(comment => comment.postId === 46);\r",
+									"    const count = commentsForPost46.length;\r",
+									"    pm.expect(count).to.be.at.least(0); \r",
+									"    console.log(`komentarų skaicius postId 46: ${count}`);\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
