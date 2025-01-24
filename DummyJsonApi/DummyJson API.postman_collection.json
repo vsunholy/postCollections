@@ -27,11 +27,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/50",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/50",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -47,11 +45,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/133x43",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/133x43",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -67,11 +63,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+Peter",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/400x200/008080/ffffff?text=Hello+Peter",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -95,11 +89,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200/282828",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/400x200/282828",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -116,11 +108,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200?type=webp&text=I+am+a+webp+image",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/400x200?type=webp&text=I+am+a+webp+image",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -146,11 +136,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200/282828?fontFamily=pacifico&text=I+am+a+pacifico+font",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/400x200/282828?fontFamily=pacifico&text=I+am+a+pacifico+font",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -177,11 +165,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+Peter!&fontSize=16",
-							"protocol": "https",
+							"raw": "{{base_url}}/image/400x200/008080/ffffff?text=Hello+Peter!&fontSize=16",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"image",
@@ -209,11 +195,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/icon/abc123/150",
-							"protocol": "https",
+							"raw": "{{base_url}}/icon/abc123/150",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"icon",
@@ -293,11 +277,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/auth/refresh",
-							"protocol": "https",
+							"raw": "{{base_url}}/auth/refresh",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"auth",
@@ -310,16 +292,6 @@
 				{
 					"name": "Auth me",
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Mzc2MTgxNDgsImV4cCI6MTczNzYyMTc0OH0.NUiD6Diai2OXmMR-LI09PPo7ujJJNGHkiN_r0S05vBY",
-									"type": "string"
-								}
-							]
-						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -363,11 +335,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -383,11 +353,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products/search?q=phone",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/search?q=phone",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -409,11 +377,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products?limit=10&skip=10&select=title,price",
-							"protocol": "https",
+							"raw": "{{base_url}}/products?limit=10&skip=10&select=title,price",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products"
@@ -442,11 +408,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products?sortBy=title&order=asc",
-							"protocol": "https",
+							"raw": "{{base_url}}/products?sortBy=title&order=asc",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products"
@@ -471,11 +435,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products/categories",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/categories",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -491,11 +453,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products/category/smartphones",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/category/smartphones",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -521,11 +481,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/products/add",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -550,11 +508,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/products/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -570,11 +526,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/products/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products",
@@ -611,11 +565,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/carts",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts"
@@ -630,11 +582,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/carts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts",
@@ -650,11 +600,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/carts/user/6",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts/user/6",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts",
@@ -680,11 +628,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/carts/add",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts",
@@ -709,11 +655,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/carts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts",
@@ -729,11 +673,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/carts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/carts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"carts",
@@ -754,11 +696,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes"
@@ -773,11 +713,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes",
@@ -793,11 +731,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes/search?q=Margherita",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes/search?q=Margherita",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes",
@@ -819,11 +755,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes?limit=10&skip=10&select=name,image",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes?limit=10&skip=10&select=name,image",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes"
@@ -852,11 +786,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes?sortBy=name&order=asc",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes?sortBy=name&order=asc",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes"
@@ -881,11 +813,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes/tags",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes/tags",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes",
@@ -901,11 +831,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes/tag/Pakistani",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes/tag/Pakistani",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes",
@@ -922,11 +850,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/recipes/meal-type/snack",
-							"protocol": "https",
+							"raw": "{{base_url}}/recipes/meal-type/snack",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"recipes",
@@ -948,11 +874,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users",
-							"protocol": "https",
+							"raw": "{{base_url}}/users",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users"
@@ -976,11 +900,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/user/login",
-							"protocol": "https",
+							"raw": "{{base_url}}/user/login",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"user",
@@ -996,11 +918,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/user/me",
-							"protocol": "https",
+							"raw": "{{base_url}}/user/me",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"user",
@@ -1016,11 +936,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1036,11 +954,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/search?q=John",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/search?q=John",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1062,11 +978,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/filter?key=hair.color&value=Brown",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/filter?key=hair.color&value=Brown",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1092,11 +1006,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users?sortBy=firstName&order=asc",
-							"protocol": "https",
+							"raw": "{{base_url}}/users?sortBy=firstName&order=asc",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users"
@@ -1121,11 +1033,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/6/carts",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/6/carts",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1142,11 +1052,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/5/posts",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/5/posts",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1163,11 +1071,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/5/todos",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/5/todos",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1193,11 +1099,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/users/add",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1222,11 +1126,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/users/2",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/2",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1242,11 +1144,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/users/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/users/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"users",
@@ -1267,11 +1167,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts"
@@ -1286,14 +1184,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}posts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}posts"
 							],
 							"path": [
-								"posts",
 								"1"
 							]
 						}
@@ -1306,11 +1201,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/search?q=love",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/search?q=love",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1332,11 +1225,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts?limit=10&skip=10&select=title,reactions,userId",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts?limit=10&skip=10&select=title,reactions,userId",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts"
@@ -1365,11 +1256,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts?sortBy=title&order=asc",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts?sortBy=title&order=asc",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts"
@@ -1394,11 +1283,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/tags",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/tags",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1414,11 +1301,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/tag-list",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/tag-list",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1434,11 +1319,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/tag/life",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/tag/life",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1455,11 +1338,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/user/5",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/user/5",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1476,11 +1357,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/1/comments",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/1/comments",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1506,14 +1385,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/posts/add",
-							"protocol": "https",
+							"raw": "{{base_url}}posts/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}posts"
 							],
 							"path": [
-								"posts",
 								"add"
 							]
 						}
@@ -1535,11 +1411,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/posts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/posts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"posts",
@@ -1555,14 +1429,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/posts/1",
-							"protocol": "https",
+							"raw": "{{base_url}}posts/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}posts"
 							],
 							"path": [
-								"posts",
 								"1"
 							]
 						}
@@ -1600,11 +1471,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/comments",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments"
@@ -1631,11 +1500,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/comments/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments",
@@ -1663,11 +1530,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/comments?limit=10&skip=10&select=body,postId",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments?limit=10&skip=10&select=body,postId",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments"
@@ -1708,11 +1573,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/comments/post/6",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments/post/6",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments",
@@ -1738,11 +1601,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/comments/add",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments",
@@ -1767,11 +1628,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/comments/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments",
@@ -1787,11 +1646,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/comments/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/comments/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"comments",
@@ -1812,11 +1669,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos"
@@ -1831,11 +1686,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -1851,11 +1704,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos/random",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/random",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -1871,11 +1722,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos?limit=3&skip=10",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos?limit=3&skip=10",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos"
@@ -1900,11 +1749,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos/user/5",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/user/5",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -1930,11 +1777,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/todos/add",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/add",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -1959,11 +1804,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/todos/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -1979,11 +1822,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/todos/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/todos/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"todos",
@@ -2004,14 +1845,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/quotes",
-							"protocol": "https",
+							"raw": "{{base_url}}quotes",
 							"host": [
-								"dummyjson",
-								"com"
-							],
-							"path": [
-								"quotes"
+								"{{base_url}}quotes"
 							]
 						}
 					},
@@ -2023,11 +1859,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/quotes/1",
-							"protocol": "https",
+							"raw": "{{base_url}}/quotes/1",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"quotes",
@@ -2043,11 +1877,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/quotes/random",
-							"protocol": "https",
+							"raw": "{{base_url}}/quotes/random",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"quotes",
@@ -2063,11 +1895,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/quotes?limit=3&skip=10",
-							"protocol": "https",
+							"raw": "{{base_url}}/quotes?limit=3&skip=10",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"quotes"
