@@ -247,11 +247,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://dummyjson.com/auth/login",
-							"protocol": "https",
+							"raw": "{{base_url}}/auth/login",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"auth",
@@ -277,11 +275,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/auth/me",
-							"protocol": "https",
+							"raw": "{{base_url}}/auth/me",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"auth",
@@ -310,6 +306,34 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Auth me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Mzc2MTgxNDgsImV4cCI6MTczNzYyMTc0OH0.NUiD6Diai2OXmMR-LI09PPo7ujJJNGHkiN_r0S05vBY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/auth/me",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -322,11 +346,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://dummyjson.com/products",
-							"protocol": "https",
+							"raw": "{{base_url}}/products",
 							"host": [
-								"dummyjson",
-								"com"
+								"{{base_url}}"
 							],
 							"path": [
 								"products"
@@ -2100,7 +2122,11 @@
 					"    pm.expect(true).to.be.true; // Tuščias testas, kad log'as būtų matomas\r",
 					"});\r",
 					"\r",
-					""
+					"pm.test(\"Save tokens to environment\", function () {\r",
+					"    const jsonData = pm.response.json();\r",
+					"    pm.environment.set(\"AccessToken\", jsonData.token);\r",
+					"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
+					"});"
 				]
 			}
 		}
