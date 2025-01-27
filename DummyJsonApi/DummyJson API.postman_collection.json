@@ -216,9 +216,6 @@
 				{
 					"name": "Login user and get tokens",
 					"request": {
-						"auth": {
-							"type": "bearer"
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -245,19 +242,27 @@
 				},
 				{
 					"name": "Get current auth user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Mzc2MTgxNDgsImV4cCI6MTczNzYyMTc0OH0.NUiD6Diai2OXmMR-LI09PPo7ujJJNGHkiN_r0S05vBY",
-									"type": "string"
-								}
-							]
-						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{AccessToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{base_url}}/auth/me",
 							"host": [
@@ -1471,12 +1476,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/comments",
+							"raw": "{{base_url}}/comments?limit=0",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"comments"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "0"
+								}
 							]
 						}
 					},
@@ -1936,6 +1947,12 @@
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
+					"pm.test(\"Save tokens to environment\", function () {\r",
+					"    const jsonData = pm.response.json();\r",
+					"    pm.environment.set(\"AccessToken\", jsonData.accessToken); // Case-sensitive\r",
+					"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
+					"});\r",
+					"\r",
 					"//Patikrinti kiekvieno request formatą\r",
 					"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
 					"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
@@ -1952,11 +1969,7 @@
 					"    pm.expect(true).to.be.true; // Tuščias testas, kad log'as būtų matomas\r",
 					"});\r",
 					"\r",
-					"pm.test(\"Save tokens to environment\", function () {\r",
-					"    const jsonData = pm.response.json();\r",
-					"    pm.environment.set(\"AccessToken\", jsonData.token);\r",
-					"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
-					"});"
+					""
 				]
 			}
 		}
