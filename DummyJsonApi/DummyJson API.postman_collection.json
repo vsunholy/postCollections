@@ -215,6 +215,18 @@
 			"item": [
 				{
 					"name": "Login user and get tokens",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"console.log(pm.environment.get(\"AccessToken\"));"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1463,9 +1475,12 @@
 									"    const jsonData = pm.response.json();\r",
 									"    const commentsForPost46 = jsonData.comments.filter(comment => comment.postId === 46);\r",
 									"    const count = commentsForPost46.length;\r",
-									"    pm.expect(count).to.be.at.least(0); \r",
+									"    pm.expect(count).to.be.at.least(1); \r",
 									"    console.log(`komentarų skaicius postId 46: ${count}`);\r",
-									"});"
+									"  \r",
+									"});\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -1952,6 +1967,8 @@
 					"    pm.environment.set(\"AccessToken\", jsonData.accessToken); // Case-sensitive\r",
 					"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
 					"});\r",
+					"\r",
+					"\r",
 					"\r",
 					"//Patikrinti kiekvieno request formatą\r",
 					"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
