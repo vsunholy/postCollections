@@ -1,6 +1,5 @@
 [
-    {
-        "users": [
+   
             {
                 "id": 1,
                 "username": "emilys",
@@ -1041,9 +1040,4 @@
                 "username": "samanthal",
                 "password": "samanthalpass"
             }
-        ],
-        "total": 208,
-        "skip": 0,
-        "limit": 208
-    }
-]
+        ]
