@@ -1,7 +1,7 @@
 {
-	"id": "676bd956-7d9a-441c-bf41-7e2d02c485ac",
+	"id": "8867921d-8044-4898-87d5-f2e6f542cbcf",
 	"name": "DummyJson API",
-	"timestamp": "2025-01-30T09:27:06.576Z",
+	"timestamp": "2025-01-30T11:32:07.709Z",
 	"collection_id": "40513726-6ee016ad-4f05-4bce-8501-32f22d9a79bb",
 	"folder_id": 0,
 	"environment_id": "40513726-bb89ed52-1e3e-4097-a392-d32547c5e069",
@@ -9,14 +9,14 @@
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2025-01-30T09:27:00.953Z",
+	"startedAt": "2025-01-30T11:32:01.950Z",
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "87d4c9ab-23f7-44a4-9c09-17605d0e6a85",
 			"name": "Get products by a category",
 			"url": "https://dummyjson.com/products/category/womens-watches",
-			"time": 127,
+			"time": 125,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -56,30 +56,30 @@
 				}
 			},
 			"times": [
+				386,
 				126,
 				126,
-				131,
+				127,
+				126,
 				128,
-				126,
-				126,
-				127,
-				125,
-				127,
-				125,
-				138,
-				125,
-				125,
-				126,
-				127,
-				127,
-				125,
-				125,
-				124,
-				127,
+				128,
 				141,
-				124,
+				126,
+				127,
+				126,
+				127,
+				126,
+				126,
+				128,
+				127,
+				128,
+				127,
 				125,
-				127
+				136,
+				126,
+				127,
+				130,
+				125
 			],
 			"allTests": [
 				{
@@ -278,7 +278,7 @@
 		}
 	],
 	"count": 24,
-	"totalTime": 3053,
+	"totalTime": 3325,
 	"collection": {
 		"requests": [
 			{

@@ -541,14 +541,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/products/category/smartphones",
+							"raw": "{{base_url}}/products/category/{{category}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"products",
 								"category",
-								"smartphones"
+								"{{category}}"
 							]
 						}
 					},
