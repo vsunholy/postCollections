@@ -1,0 +1,290 @@
+{
+	"id": "676bd956-7d9a-441c-bf41-7e2d02c485ac",
+	"name": "DummyJson API",
+	"timestamp": "2025-01-30T09:27:06.576Z",
+	"collection_id": "40513726-6ee016ad-4f05-4bce-8501-32f22d9a79bb",
+	"folder_id": 0,
+	"environment_id": "40513726-bb89ed52-1e3e-4097-a392-d32547c5e069",
+	"totalPass": 144,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-01-30T09:27:00.953Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "87d4c9ab-23f7-44a4-9c09-17605d0e6a85",
+			"name": "Get products by a category",
+			"url": "https://dummyjson.com/products/category/womens-watches",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Save tokens to environment": true,
+				"Content-Type is one of json, webp, jpg, or png": true,
+				"JSON neturi 'error' elemento": true,
+				"Rodyti statuso kodą": true,
+				"Status code is 200": true,
+				"Category has products": true
+			},
+			"testPassFailCounts": {
+				"Save tokens to environment": {
+					"pass": 24,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 24,
+					"fail": 0
+				},
+				"JSON neturi 'error' elemento": {
+					"pass": 24,
+					"fail": 0
+				},
+				"Rodyti statuso kodą": {
+					"pass": 24,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 24,
+					"fail": 0
+				},
+				"Category has products": {
+					"pass": 24,
+					"fail": 0
+				}
+			},
+			"times": [
+				126,
+				126,
+				131,
+				128,
+				126,
+				126,
+				127,
+				125,
+				127,
+				125,
+				138,
+				125,
+				125,
+				126,
+				127,
+				127,
+				125,
+				125,
+				124,
+				127,
+				141,
+				124,
+				125,
+				127
+			],
+			"allTests": [
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				},
+				{
+					"Save tokens to environment": true,
+					"Content-Type is one of json, webp, jpg, or png": true,
+					"JSON neturi 'error' elemento": true,
+					"Rodyti statuso kodą": true,
+					"Status code is 200": true,
+					"Category has products": true
+				}
+			]
+		}
+	],
+	"count": 24,
+	"totalTime": 3053,
+	"collection": {
+		"requests": [
+			{
+				"id": "87d4c9ab-23f7-44a4-9c09-17605d0e6a85",
+				"method": "GET"
+			}
+		]
+	}
+}
